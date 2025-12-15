@@ -28,7 +28,7 @@ def process_image(src_path: Path, dst_path: Path):
 
 def main():
     # 1️⃣ Объединяем папки
-    for split in ["train", "valid", "test"]:
+    for split in ["train", "valid"]:
         split_dir = SRC_ROOT / split
         if not split_dir.exists():
             print(f"[WARN] {split_dir} не существует, пропускаю")
